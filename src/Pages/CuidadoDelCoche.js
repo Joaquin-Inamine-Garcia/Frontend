@@ -1,3 +1,5 @@
+import React from "react";
+
 const CuidadoDelCoche = (props) => {
     return (
         <main class="holder">

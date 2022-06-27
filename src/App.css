@@ -1,38 +1,161 @@
-.App {
-  text-align: center;
+body {
+    font-family: 'Koulen', cursive;
+    ;
+    font-size: 20px;
+    line-height: 20px;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+header {
+    background-color: orangered;
+    padding: 20px;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
+header h1 {
+    font-size: 40px;
+    font-weight: 50px;
+    display: inline-block;
+    position: relative;
+    bottom: 35px;
+    margin-left: 10px;
+}
+
+nav {
+    background-color: grey;
+    margin-bottom: 20px;
+}
+
+nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+
+}
+
+nav ul li {
+    flex-grow: 1;
+}
+
+nav ul li a {
+    color: black;
+    text-decoration: none;
+    padding: 3px 6px;
+    display: block;
+    text-align: center;
+}
+
+nav ul li a:hover {
+    background-color: lightgrey (0, 0, 0, 0.3);
+}
+
+nav ul li a.activo {
+    background-color: grey;
+}
+
+footer {
+    background-color: white;
+    clear: both;
+    color: black;
+    text-align: center;
+    padding: 50px 0;
+    margin-top: 20px;
+}
+
+.holder {
+    max-width: 960px;
+    margin: 0 auto;
+}
+/*fin inicio*/
+
+/*inicio Quienes Somos*/
+.marca{
+  border: 1px;
+  border-radius: 5px;
+  width: 90%;
+  text-align: left;
+  padding: 20%;
+  box-sizing: border-box;
+}
+/*fin Quienes Somos*/
+
+/*inicio de servicios*/
+
+.servicio{
+border:1px solid;
+border-radius: 30px;
+padding: 20%;
+margin: 16px 0;
+display: flex;
+gap: 35px;
+align-items: center;
+}
+
+.servicio .info h4{
+color: blue;
+font-weight: 600;
+font-style: normal;
+border-bottom: 1px solid black;
+padding-bottom: 10px;
+}
+
+.servicio .info p{
+font-size: 13px;
+}
+
+.servicio img{
+border-radius: 15px;
+display: block;
+max-width: 225px;
+}
+
+/*inicio galeria*/
+
+.galeria{
+display: flex;
+flex-wrap: wrap;
+justify-content: flex-start;
+}
+
+.galeria img {
+  width: 20%;
+  border: 1px;
+  padding: 5px;
+  box-sizing: border-box;
+  margin-bottom: 20px;
+  margin-right: 5%;
   }
+
+/*fin galeria*/
+
+/*inicio contacto*/
+
+.formulario p label{
+display: flex;
+align-items: center;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+.formulario p:nth-child(4){
+align-items: flex-start;
 }
 
-.App-link {
-  color: #61dafb;
+.formulario textarea {
+resize: none;
+height: 150px;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.formulario input[type="submit"] {
+background: orangered;
+box-shadow: 0 0 10px rgba(0, 0, 0, 0.4);
+color: black;
+font-size: 16px;
+padding: 6px 20px;
+width: auto;
+position: relative;
+left: 5rem;
+cursor: pointer;
 }
+
+.formulario input[type="submit"] :hover{
+background-color: white;
+}
+/*fin contacto*/
