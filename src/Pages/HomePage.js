@@ -1,26 +1,38 @@
 import React from "react";
 
-const HomePage = (props) => {
-    return (
-        <main class="holder">
-        <div class="inicioimg">
-        <img src="img/Inicio/slide-f150r.jpg" width="1000" alt="camiones"/>
-        </div>
-        <div class="columnas">
-            <h2>Bienvenidos</h2>
-            <p>Somos una empresa dedicada al cuidado y servicio automotriz. Contamos con la mas avanzada tecnologia para
-                que nuestro trabajo sea eficaz y satisfactorio para el cliente </p>
-        </div>
-        <div class="Opiniones">
-            <h2> Opiniones de nuestros clientes</h2>
-            <div class="Opiniones">
-                <span class="cita">"Muy responsables y precios razonables"</span>
-                <span class="autor"> - Gabriel Medina</span>
-            </div>
-        </div>
+import { useState, useEffect } from React;
+import axios from 'axios';
+import NovedadItem from '../components/layout/novedades/NovedadItem';
 
-    </main>
+const HomePage = (props) => {
+    const [loading, setLoading] = useState(false);
+    const [novedades, setNovedades] = useState([]);
+
+    useEffect(() => {
+        const cargarNovedades = async () => {
+            setLoading(true);
+            const response = await axios.get('http://localhost:3000/api/HomePage');
+            setNovedades(response.data);
+            setLoading(false);
+        };
+
+        cargarNovedades();
+    }, []);
+
+    return (
+        <section className="holder">
+        <h2>Novedades</h2>
+        {
+        loading ? (
+            <p>Cargando...</p>
+        ) : (
+            novedades.map(item => <NovedadItem key={Item.id}
+                title={item.titulo} subtitle={item.subtitulo}
+                imagen={item.imagen} body={item.cuerpo} />)
+        )
+    }
+    </section >
     )
-}
+};
 
 export default HomePage;
