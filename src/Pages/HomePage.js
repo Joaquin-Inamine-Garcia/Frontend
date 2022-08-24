@@ -11,7 +11,7 @@ const HomePage = (props) => {
     useEffect(() => {
         const cargarNovedades = async () => {
             setLoading(true);
-            const response = await axios.get('http://localhost:3000/api/HomePage');
+            const response = await axios.get('http://localhost:3000/api/Novedades');
             setNovedades(response.data);
             setLoading(false);
         };
@@ -26,9 +26,9 @@ const HomePage = (props) => {
         loading ? (
             <p>Cargando...</p>
         ) : (
-            novedades.map(item => <NovedadItem key={Item.id}
-                title={item.titulo} subtitle={item.subtitulo}
-                imagen={item.imagen} body={item.cuerpo} />)
+            novedades.map(item => <NovedadItem key={item.Id}
+                title={item.Titulo} subtitle={item.Subtitulo}
+                imagen={item.imagen} body={item.Cuerpo} />)
         )
     }
     </section >
