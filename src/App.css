@@ -65,92 +65,98 @@ footer {
     max-width: 960px;
     margin: 0 auto;
 }
+
 /*fin inicio*/
 
 /*inicio Quienes Somos*/
-.marca{
-  border: 1px;
-  border-radius: 5px;
-  width: 90%;
-  text-align: left;
-  padding: 20%;
-  box-sizing: border-box;
+.marca {
+    border: 1px;
+    border-radius: 5px;
+    width: 90%;
+    text-align: left;
+    padding: 20%;
+    box-sizing: border-box;
 }
+
 /*fin Quienes Somos*/
 
 /*inicio de servicios*/
 
-.servicio{
-border:1px solid;
-border-radius: 30px;
-padding: 20%;
-margin: 16px 0;
-display: flex;
-gap: 35px;
-align-items: center;
+.servicio {
+    border: 1px solid;
+    border-radius: 30px;
+    padding: 20%;
+    margin: 16px 0;
+    display: flex;
+    gap: 35px;
+    align-items: center;
 }
 
-.servicio .info h4{
-color: blue;
-font-weight: 600;
-font-style: normal;
-border-bottom: 1px solid black;
-padding-bottom: 10px;
+.servicio .info h4 {
+    color: blue;
+    font-weight: 600;
+    font-style: normal;
+    border-bottom: 1px solid black;
+    padding-bottom: 10px;
 }
 
-.servicio .info p{
-font-size: 13px;
+.servicio .info p {
+    font-size: 13px;
 }
 
-.servicio img{
-border-radius: 15px;
-display: block;
-max-width: 225px;
+.servicio img {
+    border-radius: 15px;
+    display: block;
+    max-width: 225px;
 }
 
 /*inicio Novedades*/
 
-.titulo_novedades {
-    
-    display: inline-flex;
-    width: 100%;
-    font: 500;
-    justify-content: center;
-
+.novedades h1 {
+    text-align: left;
+    font-size: 30px;
+    line-height: 40px;
 }
-    
+
+.novedades img {
+   
+height: 100px;
+width: 1000px;
+}
+
 
 /*fin Novedades*/
 
 /*inicio contacto*/
 
-.formulario p label{
-display: flex;
-align-items: center;
+.formulario p label {
+    display: flex;
+    align-items: center;
 }
 
-.formulario p:nth-child(4){
-align-items: flex-start;
+.formulario p:nth-child(4) {
+    align-items: flex-start;
 }
 
 .formulario textarea {
-resize: none;
-height: 150px;
+    resize: none;
+    height: 150px;
 }
 
 .formulario input[type="submit"] {
-background: orangered;
-box-shadow: 0 0 10px rgba(0, 0, 0, 0.4);
-color: black;
-font-size: 16px;
-padding: 6px 20px;
-width: auto;
-position: relative;
-left: 5rem;
-cursor: pointer;
+    background: orangered;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.4);
+    color: black;
+    font-size: 16px;
+    padding: 6px 20px;
+    width: auto;
+    position: relative;
+    left: 5rem;
+    cursor: pointer;
 }
 
-.formulario input[type="submit"] :hover{
-background-color: white;
+.formulario input[type="submit"] :hover {
+    background-color: white;
 }
+
 /*fin contacto*/
