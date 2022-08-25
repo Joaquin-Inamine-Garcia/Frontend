@@ -8,12 +8,13 @@ import HomePage from './Pages/HomePage';
 import NosotrosPage from './Pages/NosotrosPage';
 import Servicios from './Pages/ServiciosPage';
 import CuidadoDelCoche from './Pages/CuidadoDelCoche';
-import Galeria from './Pages/Galeria';
+import Novedades from './Pages/NovedadesPage';
 import Contacto from './Pages/ContactoPage';
 
 
 import './App.css';
 import { BrowserRouter, Routes, Route } from "react-router-dom";
+import novedades from './Pages/NovedadesPage';
 
 function App() {
   return (
@@ -27,7 +28,7 @@ function App() {
           <Route path='Nosotros' element={<NosotrosPage />} />
           <Route path='Servicios' element={<Servicios />} />
           <Route path='Cuidado-Del-Coche' element={<CuidadoDelCoche />} />
-          <Route path='Galeria' element={<Galeria />} />
+          <Route path='Novedades' element={<Novedades />} />
           <Route path='Contacto' element={<Contacto />} />
         </Routes>
       </BrowserRouter>
