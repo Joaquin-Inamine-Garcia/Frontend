@@ -108,24 +108,19 @@ display: block;
 max-width: 225px;
 }
 
-/*inicio galeria*/
+/*inicio Novedades*/
 
-.galeria{
-display: flex;
-flex-wrap: wrap;
-justify-content: flex-start;
+.titulo_novedades {
+    
+    display: inline-flex;
+    width: 100%;
+    font: 500;
+    justify-content: center;
+
 }
+    
 
-.galeria img {
-  width: 20%;
-  border: 1px;
-  padding: 5px;
-  box-sizing: border-box;
-  margin-bottom: 20px;
-  margin-right: 5%;
-  }
-
-/*fin galeria*/
+/*fin Novedades*/
 
 /*inicio contacto*/
 
